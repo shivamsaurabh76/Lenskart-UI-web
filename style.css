@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'LenskartSans-Regular';
+    src: url('fonts/LenskartSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'LenskartSans-Hairline';
+    src: url('fonts/LenskartSans-Hairline.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Lenskart-Serif-Book';
+    src: url('fonts/Lenskart-Serif-Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Lenskart-Serif-UltraLight';
+    src: url('fonts/Lenskart-Serif-UltraLight.otf') format('opentype');
+}
+
+body {
+    font-family: 'LenskartSans-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 5px 0;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondary-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.secondary-nav ul li {
+    margin-right: 15px;
+}
+
+.secondary-nav ul li:not(:last-child)::after {
+    content: '|';
+    margin-left: 15px;
+}
+
+.secondary-nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-us {
+    margin-right: 20px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.contact-number {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.track-order {
+    margin-left: 20px;
+}
+
+.main-nav {
+    background-color: #f0f0f0;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.main-nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.push-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 1000;
+}
+
+.push-notification button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-family: 'Lenskart-Serif-Book', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-family: 'Lenskart-Serif-UltraLight', serif;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vision, .focus {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.vision {
+    background-color: #f0f8ff;
+}
+
+.vision p, .focus p {
+    font-family: 'LenskartSans-Hairline', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.vision h2, .focus h2 {
+    font-family: 'LenskartSans-Regular', sans-serif;
+    font-size: 3em;
+    color: #001f3f;
+    margin-top: 10px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider-item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slider-content {
+    background-color: #f0f8ff;
+    padding: 20px;
+    text-align: left;
+}
+
+.slider-content h3 {
+    font-family: 'LenskartSans-Regular', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.slider-content p {
+    font-family: 'LenskartSans-Regular', sans-serif;
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.4;
+}
+
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slider-control.prev {
+    left: 10px;
+}
+
+.slider-control.next {
+    right: 10px;
+}
+
+.for-everyone {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.for-every-purpose {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+}
+
+.for-everyone h2, .for-every-purpose h2 {
+    font-family: 'Lenskart-Serif-Book', serif;
+    font-size: 2.5em;
+    color: #001f3f;
+    margin-bottom: 20px;
+}
+
+.for-everyone-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.for-everyone-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.for-everyone-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.for-everyone-item h3 {
+    font-family: 'LenskartSans-Regular', sans-serif;
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+}
+
+.for-everyone-item p {
+    font-size: 1.1em;
+}
+
+.section-description {
+    font-family: 'LenskartSans-Regular', sans-serif;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+}
+
+.purpose-item {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.purpose-item.function {
+    grid-column: 1 / 3;
+}
+
+.purpose-item.fashion {
+    grid-column: 1 / 3;
+}
+
+.purpose-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.purpose-item img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.purpose-content h3 {
+    font-family: 'LenskartSans-Regular', sans-serif;
+    font-size: 1.8em;
+    color: #001f3f;
+    margin-bottom: 10px;
+}
+
+.purpose-content p {
+    font-family: 'LenskartSans-Regular', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+}
+
+footer {
+    background-color: #001f3f;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .top-bar, .main-header, .main-nav ul {
+        flex-direction: column;
+    }
+
+    .secondary-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .secondary-nav ul li {
+        margin: 5px 10px;
+    }
+
+    .secondary-nav ul li:not(:last-child)::after {
+        content: none;
+    }
+
+    .contact-us, .contact-number, .track-order {
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .vision h2, .focus h2 {
+        font-size: 2.5em;
+    }
+
+    .slider-control {
+        display: none;
+    }
+
+    .purpose-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .purpose-item.function,
+    .purpose-item.fashion {
+        grid-column: auto;
+    }
+
+    .purpose-item {
+        flex-direction: column;
+    }
+
+    .purpose-item img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .purpose-content {
+        align-items: center;
+        text-align: center;
+    }
+}
