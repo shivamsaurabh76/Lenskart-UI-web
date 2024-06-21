@@ -1,6 +1,7 @@
 # Lenskart - Our Purpose
 
 Welcome to the "Our Purpose" page of the Lenskart website. This project aims to convey the mission and vision of Lenskart, showcasing our commitment to transforming the way people see and experience the world. This README provides a comprehensive overview of the project, including how to set it up, the structure of the files, and the features implemented.
+This project is created by [Shivam Saurabh](https://github.com/shivamsaurabh76)
 
 ## Table of Contents
 
